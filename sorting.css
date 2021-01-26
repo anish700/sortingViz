@@ -1,0 +1,40 @@
+body {
+    background-color: black;
+}
+h1{
+    color: aliceblue;
+    text-align: center;
+}
+.btn {
+    background-color: black;
+    color: cyan;
+    border: 2px solid cyan;
+    margin-left: 10px;
+    align-items:flex-end;
+  }
+  .n-btn{
+    background-color: black;
+    color: lawngreen;
+    border: 2px solid lawngreen;
+    margin-right: 560px;
+
+  }
+  .new-array {
+    background-color: black;
+    color: lightgreen;
+    border: 2px solid lightgreen; 
+  }
+  #bars-div{
+     
+    display: flex;
+    flex-direction: row;
+    
+  }
+
+  .div-bar-class{
+      background-color:turquoise;
+      margin-right: 1px;
+  }
+ #bar-spd{
+  margin-right: 100px;
+align-content:center; }
