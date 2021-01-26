@@ -3,7 +3,7 @@
 let div = [];
 
 
-function createBars(array_size=15){
+function createBars(array_size=100){
     let nn=array_size;
     // let div = new Array(15);
 //to refresh every time we click new-array btn
@@ -11,7 +11,7 @@ function createBars(array_size=15){
     element.replaceChildren([]);
 
     var makeARandomNumber = function(){
-        return 1+Math.floor(Math.random() *nn*20);
+        return 1+Math.floor(Math.random() *nn*3);
     }
     var array1=[];
     for (let i = 0; i < nn; i++) {
@@ -21,7 +21,7 @@ function createBars(array_size=15){
         div[i].className ="div-bar-class";
         div[i].style.height = array1[i]+"px";
         console.log(div[i].style.width);
-        div[i].style.width = "60px";
+        div[i].style.width = "10px";
         element.appendChild(div[i]);
     }
 }

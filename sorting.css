@@ -20,21 +20,21 @@ h1{
 
   }
   .new-array {
-    background-color: black;
-    color: lightgreen;
-    border: 2px solid lightgreen; 
-  }
+      background-color: black;
+      color: lightgreen;
+      border: 2px solid lightgreen; 
+    }
   #bars-div{
-     
-    display: flex;
-    flex-direction: row;
-    
-  }
+      
+      display: flex;
+      flex-direction: row;
+      
+    }
 
   .div-bar-class{
-      background-color:turquoise;
-      margin-right: 1px;
+        background-color:turquoise;
+        margin-right: 1px;
   }
  #bar-spd{
   margin-right: 100px;
-align-content:center; }
+  align-content:center; }

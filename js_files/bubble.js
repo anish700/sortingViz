@@ -20,7 +20,7 @@
                 await new Promise(resolve => {
                     setTimeout(() => {
                       resolve('resolved');
-                    }, 100);
+                    }, 0.5);
                 });
                 
                 swap(arr[j], arr[j+1]);

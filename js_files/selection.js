@@ -21,7 +21,7 @@ async function selectionSort(arr){
                 await new Promise(resolve => {
                     setTimeout(() => {
                       resolve('resolved');
-                    }, 80);
+                    }, 2);
                 });
                 swap(arr[i], arr[j]);
             }          
