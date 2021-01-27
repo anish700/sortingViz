@@ -1,37 +1,37 @@
 
-async function msort(arr){
-    if (arr.length < 2) {
-        return arr;
-          }
-    
-      const mid = Math.floor(arr.length / 2);
-      const left = arr.slice(0, mid);
-      const right = arr.slice(mid);
-    
-      return merge(msort(left), msort(right));
-    }
+function merge(a, b) {
 
+  let c = []
 
+  while (a.length && b.length) {
+             let style1 = window.getComputedStyle(a[0]);
+             let style2 = window.getComputedStyle(b[0]);
+             let height1 = style1.getPropertyValue("height");
+             let height2 = style2.getPropertyValue("height");
+             height1=parseInt(height1.substring(0,n-2) ) ;
+             height2=parseInt(height2.substring(0,n-2) ) ;
+    c.push(height1 > height2 ? b.shift() : a.shift())
+  }
 
-async function merge(arr, left , mid , right){
-    let arr = [];
-    let n=arr.length;
-
-    while (left.length && right.length) {
-        let temp_arr=[];
-        temp_arr =getValFromCSS(arr[j] , arr[j+1] ,n);
-           let height1=temp_arr[0];
-           let height2=temp_arr[1];
-
-        if (left[0] < right[0]) {
-          arr.push(left.shift());
-        } else {
-          arr.push(right.shift());
-        }
-      }
-      return arr.concat(left.slice().concat(right.slice()));
-  
-    
+  //if we still have values, let's add them at the end of `c`
+  while (a.length) {
+    c.push(a.shift())
+  }
+  while (b.length) {
+    c.push(b.shift())
+  }
 
 }
 
+async function mergeSort(a) {
+  
+
+  if (a.length < 2) return a
+  let middle = Math.floor(a.length / 2)
+  let a_l = a.slice(0, middle)
+  let a_r = a.slice(middle, a.length)
+  let sorted_l = mergeSort(a_l)
+  let sorted_r = mergeSort(a_r)
+  merge(sorted_l, sorted_r)
+
+}

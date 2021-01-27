@@ -43,6 +43,9 @@ document.getElementsByClassName("bubble-sort")[0].addEventListener("click", func
 document.getElementsByClassName("selection-sort")[0].addEventListener("click", function(){
     selectionSort(div);
 });
+document.getElementsByClassName("merge-sort")[0].addEventListener("click", function(){
+    mergeSort(div);
+});
 async function delay(){
     await new Promise(resolve => {
         setTimeout(() => {
