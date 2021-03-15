@@ -44,7 +44,13 @@ document.getElementsByClassName("selection-sort")[0].addEventListener("click", f
     selectionSort(div);
 });
 document.getElementsByClassName("merge-sort")[0].addEventListener("click", function(){
-    mergeSort(div);
+    merge(div);
+});
+document.getElementsByClassName("merge-sort")[0].addEventListener("click", function(){
+    insertionSort(div);
+});
+document.getElementsByClassName("merge-sort")[0].addEventListener("click", function(){
+    selectionSort(div);
 });
 async function delay(){
     await new Promise(resolve => {
@@ -69,7 +75,7 @@ function swap(el1,el2)
 
     }
 function getValFromCSS(el1 , el2,n){
-    arr=[];
+                 arr=[];
                  let style1 = window.getComputedStyle(el1);
                  let style2 = window.getComputedStyle(el2);
                  let height1 = style1.getPropertyValue("height");
@@ -78,7 +84,6 @@ function getValFromCSS(el1 , el2,n){
                  height2=parseInt(height2.substring(0,n-2) ) ;
                  arr[0]=height1 ;
                  arr[1]=height2 ;
-
                  return arr;
     }    
 

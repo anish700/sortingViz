@@ -1,6 +1,3 @@
-
-
-
  async function bubbleSort(arr){
     let i,j;
     let n=arr.length;

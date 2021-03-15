@@ -1,6 +1,6 @@
 
 
-async function selectionSort(arr){
+async function quickSort(arr){
     let i,j;
     let n=arr.length;
 
